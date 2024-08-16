@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+}
+:root{
+    --purple-200: #9a7bd1;
+
+    --purple-500: #6b36c8;
+
+    --purple-800: #441f88;
+
+    --black-800: #171717;
+
+    --gray-200: #cccccc;
+
+    --gray-400: #505861;
+
+    --white: #ffffff;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--gray-200);
+    color: var(--black-800);
+}
+
+.botao{
+    padding: 12px 32px;
+    border: 1px solid var(--purple-800);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    ;
+}
+
+.botao:hover{
+    color: var(--gray-200);
+    background-color: var(--purple-800);
+    transition: 0.3s ease-out;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilização seção header */
+
+.menu_container {
+    background-color: var(--purple-800);
+    position: sticky;
+    top: 0;
+    filter: opacity(0.9);
+    height: 80px;
+}
+
+.menu_container a {
+    font-size: 16px;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.menu_container a:hover {
+    color: var(--purple-200);
+}
+
+.menu_content {
+    max-width: 1124px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_lista {
+    list-style: none;
+}
+
+.menu_lista li {
+    margin: 0 0 0 16px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home_texto {
+    max-width: 500px;
+    text-align: center;
+}
+.texto {
+    margin: 0.9rem 0;
+}
+.texto-destaque {
+    font-size: 28px;
+}
+.descricao {
+    margin-bottom: 30px;
+}
+#profile-picture {
+    width: 320px;
+    border-radius: 100%;
+    background: linear-gradient(45deg, #F48ACE 0%, #493A97 100%);
+    padding: 5px;
+}
+#sobre_texto {
+    max-width: 650px;
+    text-align: center;
+    padding: 0 30px;
+}
+#sobre_github {
+    justify-content: space-evenly;
+}

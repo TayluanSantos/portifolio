@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portifólio">
+    <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Tayluan Santos">
-    <meta name="keywords" content="HTML,CSS,Javascript">
-    <link rel="icon" href="./assets/img/favicon.svg">
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Universe</title>
 </head>
 <body>
-    <header>
-        <div id="header_content">
+    <header class="menu_container flex">
+        <div id="header_content" class="menu_content">
+
             <div id="titulo">
                 <a href="#">Universe</a>
             </div>
-            <div id="menu">
+
+            <div id="menu" class="flex">
                 <nav>
-                    <ul>
+                    <ul class="flex menu_lista">
                         <li><a href="#">Home</a></li>
-                        <li><a href="about">Sobre</a></li>
-                        <li><a href="contact">Contate-me</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contate-me</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
-        <!-- Seção Home -->
+    <!-- Main -->
+     <main>
+          <!-- Section Home -->
         <section id="home">
-
             <article id="home_texto">
-                <h4>Bem-Vindo ao Novo Universo</h4>
-                <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam qui ad tempora, labore adipisci facere nulla vitae perferendis nemo saepe, repellendus, corporis expedita inventore id est dolorum enim? Inventore.</p>
-                <a href="http://github.com/conteudoGeneration" target="_blank" rel="Github da Generation Brasil"> Explorar</a>
+
+                <h4 class="texto">Bem-vindo ao Novo Universo</h4>
+                <h1 class="texto texto-destaque" >Mundos diferentes para pessoas diferentes</h1>
+                <p  class="texto descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod error veniam in voluptatem magni quisquam
+                </p>
+
+                <a class="botao" target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                    Explorar
+                </a>
             </article>
 
             <article id="home_imagem">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de astronauta animado" width="400px">
+                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="450">
             </article>
-
         </section>
 
-        <!-- Seção de Sobre Mim -->
-        <section id="about">
-            <!-- Foto do Perfil do Github -->
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
-            <!-- Texto Sobre você -->
+        <!-- Section About -->
+        <section id="about" class="flex">
+
+            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" id="profile-picture">
+
             <article id="sobre_texto">
-                <h1>Sobre mim</h1>
-                <p>
+                <h1 class="texto texto-destaque">Sobre mim</h1>
+                <p class="texto">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Quibusdam odit voluptates incidunt inventore rem error harum
                     blanditiis accusamus vitae, minus fugit consequatur?
                     Dolorum maiores magni deleniti modi sit laudantium totam!
                 </p>
-            <!-- Informações do Github -->
-                <div id="sobre_github">
-                    <a target="_blank" href="https://github.com/conteudoGeneration">Github</a>
+                <div id="sobre_github" class="flex">
+                    <a target="_blank" href="https://github.com/conteudoGeneration" class="botao">Github</a>
                     <p>200 Seguidores</p>
                     <p>100 Repositórios</p>
                 </div>
             </article>
         </section>
-
-        <!-- Seção de Contato - Redes Sociais-->
+        <!-- Section Contact -->
         <section id="contact">
             <article id="redes_sociais">
+
                 <h4>Contate-me</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quod error veniam in voluptatem magni quisquam</p>
+
                 <div id="icones_redes_sociais">
                     <a href="">
-                        <img src="" alt="" width="">:
                         <img src="assets/img/linkedin.svg" alt="LinkedIn" />
                     </a>
                     <a href="">
@@ -84,33 +92,31 @@
                         <img src="assets/img/instagram.svg" alt="Instagram" />
                     </a>
                 </div>
-            </article>
 
+            </article>
             <form action="" method="POST">
+
                 <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                <input id="name" type="text" name="name" placeholder="Digite seu nome" >
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email">
+                <input id="email" type="text" name="email" placeholder="Digite seu email" >
                 <span id="txtEmail"></span>
-
+                
                 <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da message">
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da message" >
                 <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
+                <textarea id="message" name="message" placeholder="Digite sua message" ></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button> 
             </form>
         </section>
-    </main>
-    <footer>
-        <footer>
-            Feito com 🧡 por Tayluan Santos - 2024
-        </footer>
-        </p>
+     </main>
+     <footer>
+        Feito com 🧡 por Tayluan Santos - 2024
     </footer>
 </body>
 </html>
