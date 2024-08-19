@@ -27,7 +27,7 @@ html{
 }
 
 body{
-    background-color: var(--gray-200);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     color: var(--black-800);
 }
 
@@ -75,7 +75,7 @@ body{
 }
 
 .menu_content {
-    max-width: 1124px;
+    max-width: 1120px;
     padding: 0 24px;
     width: 100%;
     display: flex;
@@ -95,10 +95,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+
 }
 #home_texto {
     max-width: 500px;
     text-align: center;
+}
+#about {
+    height: 100vh;
 }
 .texto {
     margin: 0.9rem 0;
@@ -122,4 +127,62 @@ body{
 }
 #sobre_github {
     justify-content: space-evenly;
+}
+
+/* Section Contatos */
+.contato_container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,540px);
+    align-items: center;
+    max-width: 1120px;
+    margin: auto;
+    height: 100vh;
+    gap:30px;
+}
+
+.contato_content {
+    gap: 20px;
+    flex-direction: column;
+}
+.social_container a img {
+   width: 50px;
+}
+.social_icon:hover {
+    filter: 
+    brightness(0) 
+    saturate(100%) 
+    invert(30%) 
+    sepia(70%) 
+    saturate(1418%) 
+    hue-rotate(238deg) 
+    brightness(84%) 
+    contrast(109%);
+
+    transition: 0.3s;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form input,textarea {
+    margin: 8px 0 16px;
+    padding: 8px;
+    border-radius:14px;
+    border:none;
+}
+
+form button {
+    background-color: transparent;
+    cursor:pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--purple-800);
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
 }
