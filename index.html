@@ -8,7 +8,7 @@
     <meta name="author" content="Tayluan Santos">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Universe</title>
 </head>
 <body>
@@ -39,11 +39,11 @@
                 <h4 class="texto">Bem-vindo ao Novo Universo</h4>
                 <h1 class="texto texto-destaque" >Mundos diferentes para pessoas diferentes</h1>
                 <p  class="texto descricao">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod error veniam in voluptatem magni quisquam
+                    Bem-vindo ao meu universo! Estou muito feliz em tê-lo aqui. Este portfólio é uma janela para o meu mundo, onde cada projeto reflete minha paixão e dedicação.
+                    Navegue à vontade e descubra como posso transformar ideias em realidade, utilizando as mais recentes tendências e tecnologias.
                 </p>
 
-                <a class="botao" target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                <a class="botao" target="_blank" href="https://github.com/TayluanSantos" alt="Github da Generation Brasil">
                     Explorar
                 </a>
             </article>
@@ -56,45 +56,32 @@
         <!-- Section About -->
         <section id="about" class="flex">
 
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" id="profile-picture">
-
-            <article id="sobre_texto">
-                <h1 class="texto texto-destaque">Sobre mim</h1>
-                <p class="texto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quibusdam odit voluptates incidunt inventore rem error harum
-                    blanditiis accusamus vitae, minus fugit consequatur?
-                    Dolorum maiores magni deleniti modi sit laudantium totam!
-                </p>
-                <div id="sobre_github" class="flex">
-                    <a target="_blank" href="https://github.com/TayluanSantos" class="botao">Github</a>
-                    <p>200 Seguidores</p>
-                    <p>100 Repositórios</p>
-                </div>
-            </article>
+         
         </section>
         <!-- Section Contact -->
         <section id="contact" class="contato_container">
             <article id="redes_sociais" class="flex contato_content">
 
                 <h4 class="texto texto-destaque">Contate-me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod error veniam in voluptatem magni quisquam</p>
+                <p>Siga-me nas minhas redes para acompanhar um pouco da minha jornada e meus projetos mais recente.</p>
 
                 <div id="icones_redes_sociais" class="flex social_container">
-                    <a href="https://www.linkedin.com/in/tayluan-de-jesus-dos-santos/" class="social_icon">
+                    <a href="https://www.linkedin.com/in/tayluan-de-jesus-dos-santos/" class="social_icon" target="_blank">
                         <img src="assets/img/linkedin.svg" alt="LinkedIn" />
                     </a>
-                    <a href="https://github.com/TayluanSantos" class="social_icon">
+                    <a href="https://github.com/TayluanSantos" class="social_icon" target="_blank">
                         <img src="assets/img/github.svg" alt="Github" />
                     </a>
-                    <a href="" class="social_icon">
+                    <!-- <a href="" class="social_icon">
                         <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
+                    </a> -->
                 </div>
 
             </article>
-            <form action="" method="POST">
+            <form id="formulario" action="https://formsubmit.co/e7ae5fc4a69f90fbe2d2658a27c2022d" method="POST">
+
+                <input type="hidden" name="_next" value="http://localhost:5500/success.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="name">Nome: </label>
                 <input id="name" type="text" name="name" placeholder="Digite seu nome" >
@@ -118,5 +105,6 @@
      <footer>
         Feito com 🧡 por Tayluan Santos - 2024
     </footer>
+    <script src= "./assets/js/script.js"></script>
 </body>
 </html>

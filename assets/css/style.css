@@ -40,6 +40,13 @@ body{
     ;
 }
 
+.botao_success {
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
 .botao:hover{
     color: var(--gray-200);
     background-color: var(--purple-800);
@@ -143,6 +150,7 @@ body{
 .contato_content {
     gap: 20px;
     flex-direction: column;
+    text-align: center;
 }
 .social_container a img {
    width: 50px;
